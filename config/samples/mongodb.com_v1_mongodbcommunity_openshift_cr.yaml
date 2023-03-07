@@ -3,6 +3,7 @@ apiVersion: mongodbcommunity.mongodb.com/v1
 kind: MongoDBCommunity
 metadata:
   name: example-openshift-mongodb
+  namespace: mongo
 spec:
   members: 3
   type: ReplicaSet
@@ -35,4 +36,4 @@ metadata:
   name: my-user-password
 type: Opaque
 stringData:
-  password: <your-password-here>
+  password: password
